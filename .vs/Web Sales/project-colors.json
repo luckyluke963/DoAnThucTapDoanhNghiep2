@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1b10774d-4ad8-4c5b-99a2-190a6fe5b582": {
+      "ProjectGuid": "1b10774d-4ad8-4c5b-99a2-190a6fe5b582",
+      "DisplayName": "Web Sales",
+      "ColorIndex": 0
+    },
+    "e7f47b6a-815b-40d3-85e8-1c63af7b1856": {
+      "ProjectGuid": "e7f47b6a-815b-40d3-85e8-1c63af7b1856",
+      "DisplayName": "Model",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

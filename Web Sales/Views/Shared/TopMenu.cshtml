@@ -1,0 +1,29 @@
+﻿@model List<Model.EntityFramework.Menu>
+
+<div class="call">
+    <p><span>Need help?</span> call us <span class="number">1-22-3456789</span></span></p>
+</div>
+<div class="account_desc">
+    @{
+        var session = (Web_Sales.Commom.UserLogin) Session[Web_Sales.Commom.CommomConstants.USER_SESSION];
+    }
+    @if (session == null)
+    {
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li><a href="@item.Link" target="@item.Target">@item.Text</a></li>
+            }
+
+        </ul>
+    }
+    else
+    {
+        <ul>
+            <li>Xin chào:@session.UserName</li>
+            <li>@Html.ActionLink("Thoát", "Logout", "RegisterHome")</li>
+        </ul>
+    }
+
+</div>
+<div class="clear"></div>
